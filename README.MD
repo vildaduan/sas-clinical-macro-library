@@ -19,6 +19,7 @@ This project demonstrates proficiency in:
 ---
 
 ## Repository Structure
+```text
 /sas-clinical-macro-library
 │
 ├── /macros              <- External RTF styling macros (rtf.sas)
@@ -27,15 +28,22 @@ This project demonstrates proficiency in:
 └── README.md            <- Project documentation
 
 
-## Data Source & Requirements
-This project utilizes the **CDISC Pilot Study 101** (ADaM) dataset. While the raw `.sas7bdat` files are not included in this repository to adhere to data privacy best practices, the code is designed to run on the standard `ADSL` dataset from that study.
 
-### Required Variables:
-- **USUBJID**: Unique Subject Identifier
-- **SAFFL**: Safety Population Flag (Condition: `SAFFL="Y"`)
-- **TRT01A / TRT01AN**: Analysis Treatment (Numeric & Character)
-- **SEX / RACE**: Demographic variables for categorization
+## Data Source
+The datasets used in this project are derived from the **CDISC Pilot Study 101**. 
 
-*Note: You can download the CDISC Pilot data from the [CDISC Library](https://www.cdisc.org/standards/foundational/adam/adam-pilot-study-release-1-0) or public GitHub repositories hosting CDISC sample data.*
+To maintain a clean repository and adhere to best practices, the raw `.sas7bdat` files are not hosted directly in this folder. However, they are publicly available and can be accessed through the following sources:
+
+* **Internal Reference:** Data can be found within the `/data` folder of my other repository: [SAS-Graphs-Clinical-Trials-Example](https://github.com/vildaduan/SAS-Graphs-Clinical-Trials-Example)
+* **Official Source:** The complete CDISC Pilot Study datasets are available on the [CDISC Website](https://www.cdisc.org).
+
+### Required ADaM Variables
+The `TABLE2.sas` script expects the `ADSL` dataset to contain:
+- `USUBJID`: Unique Subject Identifier
+- `SAFFL`: Safety Population Flag (Condition: `SAFFL="Y"`)
+- `TRT01A / TRT01AN`: Analysis Treatment (Numeric & Character)
+- `SEX / RACE`: Demographic variables
+
+
 
 
