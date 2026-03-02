@@ -19,7 +19,6 @@ This project demonstrates proficiency in:
 ---
 
 ## Repository Structure
-```text
 /sas-clinical-macro-library
 │
 ├── /macros              <- External RTF styling macros (rtf.sas)
@@ -38,4 +37,5 @@ This project utilizes the **CDISC Pilot Study 101** (ADaM) dataset. While the ra
 - **SEX / RACE**: Demographic variables for categorization
 
 *Note: You can download the CDISC Pilot data from the [CDISC Library](https://www.cdisc.org/standards/foundational/adam/adam-pilot-study-release-1-0) or public GitHub repositories hosting CDISC sample data.*
+
 
