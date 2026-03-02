@@ -18,12 +18,24 @@ This project demonstrates proficiency in:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 ```text
 /sas-clinical-macro-library
 │
-├── /data                <- Contains ADSL.sas7bdat
 ├── /macros              <- External RTF styling macros (rtf.sas)
 ├── /programs            <- Main analysis script (TABLE2.sas)
 ├── /outputs             <- Final generated report (Safety_Population.rtf)
 └── README.md            <- Project documentation
+
+
+## Data Source & Requirements
+This project utilizes the **CDISC Pilot Study 101** (ADaM) dataset. While the raw `.sas7bdat` files are not included in this repository to adhere to data privacy best practices, the code is designed to run on the standard `ADSL` dataset from that study.
+
+### Required Variables:
+- **USUBJID**: Unique Subject Identifier
+- **SAFFL**: Safety Population Flag (Condition: `SAFFL="Y"`)
+- **TRT01A / TRT01AN**: Analysis Treatment (Numeric & Character)
+- **SEX / RACE**: Demographic variables for categorization
+
+*Note: You can download the CDISC Pilot data from the [CDISC Library](https://www.cdisc.org/standards/foundational/adam/adam-pilot-study-release-1-0) or public GitHub repositories hosting CDISC sample data.*
+
