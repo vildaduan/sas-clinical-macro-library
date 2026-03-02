@@ -26,7 +26,7 @@ This project demonstrates proficiency in:
 ├── /programs            <- Main analysis script (TABLE2.sas)
 ├── /outputs             <- Final generated report (Safety_Population.rtf)
 └── README.md            <- Project documentation
-
+```
 
 
 ## Data Source
@@ -43,6 +43,7 @@ The `TABLE2.sas` script expects the `ADSL` dataset to contain:
 - `SAFFL`: Safety Population Flag (Condition: `SAFFL="Y"`)
 - `TRT01A / TRT01AN`: Analysis Treatment (Numeric & Character)
 - `SEX / RACE`: Demographic variables
+
 
 
 
